@@ -7,17 +7,18 @@
 <style>
   body {
     margin: 0;
-    overflow: hidden;
+    /* Remove overflow: hidden to allow scrolling */
     background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
     color: #f5f5f7;
     font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Changed to start for natural flow */
     min-height: 100vh;
     padding: 20px;
     position: relative;
+    overflow: auto; /* Enable scrolling if content overflows */
   }
 
   h1 {
@@ -113,7 +114,7 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-    pointer-events: none;
+    pointer-events: none; /* ensure it doesn't block interactions */
   }
 </style>
 </head>
@@ -133,11 +134,9 @@
 
 <div class="love-letter">
   <p>My Dearest Monkhzul,</p>
-  <p>Happy Birthday! I’ve known you for years, but getting to know you in this new way has been something really special. Even in these few days, I’ve realized just how much your smile and your energy can brighten everything around you. You have a way of making ordinary moments feel lighter and happier, and I really admire that about you.
-
-Turning 21 is such an exciting age, full of possibilities and new beginnings. I hope this age brings you endless happiness, exciting experiences, and all the little joys that make life beautiful. I hope your dreams take shape and your days are filled with laughter, warmth, and memorable moments.
-
-I’m really looking forward to getting to know you better, sharing fun moments, and seeing where this connection between us goes. You truly deserve an age as bright, wonderful, and inspiring as you are. May your 21st birthday be filled with smiles, love, and everything that makes you happiest.</p>
+  <p>Happy Birthday! I’ve known you for years, but getting to know you in this new way has been something really special. Even in these few days, I’ve realized just how much your smile and your energy can brighten everything around you. You have a way of making ordinary moments feel lighter and happier, and I really admire that about you.</p>
+  <p>Turning 21 is such an exciting age, full of possibilities and new beginnings. I hope this age brings you endless happiness, exciting experiences, and all the little joys that make life beautiful. I hope your dreams take shape and your days are filled with laughter, warmth, and memorable moments.</p>
+  <p>I’m really looking forward to getting to know you better, sharing fun moments, and seeing where this connection between us goes. You truly deserve an age as bright, wonderful, and inspiring as you are. May your 21st birthday be filled with smiles, love, and everything that makes you happiest.</p>
   <p>With all my love,<br/>Temuujin</p>
 </div>
 
